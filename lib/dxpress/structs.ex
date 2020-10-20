@@ -50,7 +50,7 @@ defmodule Dxpress.Structs do
 
   """
   def create_user(attrs \\ %{}) do
-    %User{}
+    %User{:id => attrs["id"]}
     |> User.changeset(attrs)
     |> Repo.insert()
   end
