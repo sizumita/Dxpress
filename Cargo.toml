@@ -1,0 +1,18 @@
+cargo-features = ["edition2021"]
+
+[package]
+name = "dxpress"
+version = "0.1.0"
+authors = ["sizumita <contact@sumidora.com>"]
+edition = "2021"
+
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dependencies.sea-orm]
+version = "^0"
+features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros" ]
+default-features = false
